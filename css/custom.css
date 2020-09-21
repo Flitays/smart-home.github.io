@@ -25,7 +25,7 @@
 
 body {
   background: rgb(27, 27, 27);
-  min-height: 400vh;
+  min-height: 320vh;
 }
 
 header {
@@ -257,13 +257,14 @@ svg circle:nth-child(2) {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  max-height: 100vh;
   background: rgb(255, 255, 255);
 }
 
 .botton {
   position: relative;
   display: inline-block;
-  padding: 15px 15px;
+
   margin-left: 50px;
 
   transition: 0.4s;
@@ -272,7 +273,8 @@ svg circle:nth-child(2) {
 .title-botton {
   color: #252525;
   padding-left: 20px;
-
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
@@ -285,14 +287,24 @@ svg circle:nth-child(2) {
   color: #255784;
   background: #384e81;
   box-shadow: 0 0 10px#384e81, 0 0 40px #384e81, 0 0 60px #384e81;
+  border-radius: 30px;
+}
+
+.white:hover {
+  transition: 0.2s;
+  filter: invert(1);
+}
+.white {
+  transition: 0.4s;
 }
 
 /*------------------------------Footer---------------------------------*/
 
 footer {
-  background: #f1f1f1;
-  padding: 0px;
-  padding-top: 80vh;
+  background: #c2c2c2;
+  padding: 0;
+  margin: 0;
+  height: 20vh;
 }
 
 .footer-container {
